@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imagenes/bootstrap-fill.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+  <title>Tarea-2</title>
+</head>
+
+<body class="bg-primary-subtle" data-bs-theme="dark">
+  <!-- Navbar -->
+  <nav
+    class="navbar navbar-expand-lg bg-primary-subtle shadow-sm border border-start-0 border-end-0 border-primary-subtle"
+    id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-3 text-primary scroll" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+          height="35" fill="currentColor" class="bi bi-robot  " viewBox="0 0 16 20">
+          <path
+            d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+          <path
+            d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+        </svg>
+        Robots
+      </a></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+        <div class="navbar-nav">
+          <a class="btn btn-outline-primary  mx- scroll" aria-current="page" href="#home" role="button"
+            data-bs-toggle="button" aria-pressed="true" id="Home">Home</a>
+          <a class="btn btn-outline-primary mx-1 scroll" aria-current="page" href="#img" role="button"
+            data-bs-toggle="button" aria-pressed="true" id="imagenes">imagenes</a>
+          <a class="btn btn-outline-primary mx-1 scroll" aria-current="page" href="#imgm" role="button"
+            data-bs-toggle="button" aria-pressed="true" id="imagenesM">Imagenes con Modal</a>
+          <a class="btn btn-outline-primary mx-1 scroll" aria-current="page" href="#imgc" role="button"
+            data-bs-toggle="button" aria-pressed="true" id="imagenesC">Imagenes con collapse</a>
+          <a class="btn btn-outline-primary mx-1 scroll" aria-current="page" href="#foot" role="button"
+            data-bs-toggle="button" aria-pressed="true" id="footer">Footer</a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="position-fixed bottom-0 end-0 translate-middle-y mx-2 ">
+    <button class="text-primary btn  bg-transparent" id="up"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+        height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg></button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container bg-body-tertiary shadow-sm my-5  bg-primary-subtle border border-primary-subtle rounded-3 "
+      id="home">
+
+      <div class="row justify-content-center">
+        <h1 class="text-center col-12 m-5">¿ De qué se trata la tarea?</h1>
+        <p class="text-center my-5"><strong>Elegir el un tema de tu preferencia y en base a ella crear una galería de
+            imágenes, que debe contener:</strong></p>
+
+        <ul>
+
+          <div class="row justify-content-center">
+            <li
+              class="col-5 col-sm-4 col-lg-3 m-sm-1 p-3 text-center text-primary-emphasis bg-primary-subtle border border-danger-subtle rounded-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-1-circle "
+                viewBox="0 0 16 20">
+                <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+              </svg>
+              Un navBar.
+
+            </li>
+            <li
+              class="col-5 m-sm-1 p-3 col-lg-3 text-center text-primary-emphasis bg-primary-subtle border border-danger-subtle rounded-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-2-circle"
+                viewBox="0 0 16 20">
+                <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+              </svg>
+
+              Un footer.
+            </li>
+          </div>
+          <div class="row justify-content-center">
+            <li
+              class="col-11 col-lg-5 m-1 p-3 text-primary-emphasis bg-primary-subtle border border-danger-subtle rounded-3 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-3-circle"
+                viewBox="0 0 16 20">
+                <path
+                  d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z" />
+              </svg>
+              Doce imágenes responsivas.
+            </li>
+
+            <li
+              class="col-11 col-lg-5 m-1 p-3 text-primary-emphasis bg-primary-subtle border border-danger-subtle rounded-3 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-4-circle"
+                viewBox="0 0 16 20">
+                <path
+                  d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z" />
+              </svg>
+              Elegir 6 imágenes cuando le den click a una de ellas abrir un modal.
+          </div>
+          <div class="row justify-content-center">
+            <li
+              class="col-11  p-3 text-primary-emphasis bg-primary-subtle border border-danger-subtle rounded-3  text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-5-circle"
+                viewBox="0 0 16 20">
+                <path
+                  d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm15 0A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8.006 4.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z" />
+              </svg>
+              Las otras 6 imágenes colocarle un collapse que pueda ocultar un elemento.
+            </li>
+          </div>
+          <div class="col-12">
+            <h1 class="text-center my-5">Tema: <span class="h2 text-primary">Robots</span></h1>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Imagenes -->
+  <section>
+    <div class="container bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 py-5"
+      id="img">
+      <h1 class="text-center my-5">imagenes</h1>
+      <div class="row  justify-content-center gx-0 my-1">
+
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/2" class="img-thumbnail bg-warning" alt="...">
+        </div>
+
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/25" class="img-thumbnail bg-warning" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/6" class="img-thumbnail bg-warning" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/21" class="img-thumbnail bg-warning  shadow-sm" alt="...">
+        </div>
+
+      </div>
+      <div class="row justify-content-center gx-0">
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/20" class="img-thumbnail bg-transparent  shadow-sm" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/0" class="img-thumbnail bg-transparent  shadow-sm" alt="...">
+        </div>
+
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/3" class="img-thumbnail bg-primary-subtle" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/4" class="img-thumbnail bg-transparent" alt="...">
+        </div>
+      </div>
+      <div class="row justify-content-center gx-0">
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/23" class="img-thumbnail bg-danger  shadow-sm" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/1" class="img-thumbnail bg-danger  shadow-sm" alt="...">
+        </div>
+
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/26" class="img-thumbnail bg-danger" alt="...">
+        </div>
+        <div class="col-5 col-lg-3">
+          <img src="https://robohash.org/28" class="img-thumbnail bg-danger" alt="...">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Imagenes Modal-->
+  <section id="imgm">
+    <div
+      class="container bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3  my-5 py-5">
+      <h1 class="text-center my-5">Imagenes con Modal</h1>
+      <div class="row  justify-content-center gx-0 gy-1 ">
+
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#1" role="button">
+          <div class="modal fade " id="1" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="1">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/2">
+                    https://robohash.org/2</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/2" class="img-thumbnail bg-warning" alt="...">
+        </div>
+
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#2" role="button">
+          <div class="modal fade " id="2" tabindex="-1" aria-labelledby="2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="2">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/25">
+                    https://robohash.org/25</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/25" class="img-thumbnail bg-warning" alt="...">
+        </div>
+
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#3" role="button">
+          <div class="modal fade " id="3" tabindex="-1" aria-labelledby="3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="3">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/6">
+                    https://robohash.org/6</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/6" class="img-thumbnail bg-warning" alt="...">
+        </div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#4" role="button">
+          <div class="modal fade " id="4" tabindex="-1" aria-labelledby="4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="4">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/1">
+                    https://robohash.org/1</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/1" class="img-thumbnail bg-danger  shadow-sm" alt="...">
+        </div>
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#6" role="button">
+          <div class="modal fade " id="6" tabindex="-1" aria-labelledby="6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="6">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/28">
+                    https://robohash.org/28</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/28" class="img-thumbnail bg-danger" alt="...">
+        </div>
+        <div class="col-5 col-lg-3" data-bs-toggle="modal" data-bs-target="#5" role="button">
+          <div class="modal fade " id="5" tabindex="-1" aria-labelledby="5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div
+                class="modal-content bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="5">Enlance de la imagenes</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a class="link-info  link-underline-opacity-0" href="https://robohash.org/26">
+                    https://robohash.org/26</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="https://robohash.org/26" class="img-thumbnail bg-danger" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Imagenes con Collapse -->
+  <section id="imgc">
+    <div class="container bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 my-3 py-5"
+      id="img">
+      <h1 class="text-center my-5">Imagenes con Collapse</h1>
+      <div class="row  justify-content-center gx-0 ">
+
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#1" role="button" aria-expanded="false"
+          aria-controls="1">
+          <img src="https://robohash.org/20" class="img-thumbnail bg-transparent  border-primary-subtle  shadow-sm"
+            alt="...">
+          <div class="collapse multi-collapse " id="1">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 20
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#2" role="button" aria-expanded="false"
+          aria-controls="2">
+          <img src="https://robohash.org/0" class="img-thumbnail bg-transparent border-primary-subtle shadow-sm"
+            alt="...">
+          <div class="collapse multi-collapse " id="2">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 0
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#3" role="button" aria-expanded="false"
+          aria-controls="3">
+          <img src="https://robohash.org/3" class="img-thumbnail bg-primary-subtle  border-primary-subtle" alt="...">
+          <div class="collapse multi-collapse " id="3">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#4" role="button" aria-expanded="false"
+          aria-controls="4">
+          <img src="https://robohash.org/23" class="img-thumbnail bg-danger  shadow-sm" alt="...">
+          <div class="collapse multi-collapse " id="4">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 23
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#5" role="button" aria-expanded="false"
+          aria-controls="5">
+          <img src="https://robohash.org/1" class="img-thumbnail bg-danger  shadow-sm" alt="...">
+          <div class="collapse multi-collapse " id="5">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 1
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 col-lg-3" data-bs-toggle="collapse" href="#6" role="button" aria-expanded="false"
+          aria-controls="6">
+          <img src="https://robohash.org/26" class="img-thumbnail bg-danger" alt="...">
+          <div class="collapse multi-collapse " id="6">
+            <div
+              class="card bg-body-tertiary shadow-sm  bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+              <div class="card-header">
+                Número del robot
+              </div>
+              <div class="card-body ">
+                Robot número 26
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <footer id="foot" >
+    <div class="container-fluid bg-primary-subtle shadow-sm border border-start-0 border-end-0 border-primary-subtle ">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer </h5>
+          <p class="grey-text text-lighten-4">Has llegado al final de la página!!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="link-primary link-underline-opacity-0  scroll" href="#home">Home</a></li>
+            <li><a class="link-primary link-underline-opacity-0 scroll" href="#img">Imagenes</a></li>
+            <li><a class="link-primary link-underline-opacity-0 scroll" href="#imgc">Imagenes con Collapse</a></li>
+            <li><a class="link-primary link-underline-opacity-0 scroll" href="#imgm">Imagenes con Modal</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
+</html>

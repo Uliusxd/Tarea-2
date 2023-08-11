@@ -1,0 +1,13 @@
+body {
+    scrollbar-width: none; /* Para navegadores que soportan el estándar */
+    -ms-overflow-style: none; /* Para versiones antiguas de Microsoft Edge e Internet Explorer */
+  }
+  
+  /* Estilos específicos para navegadores WebKit (como Chrome y Safari) */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+li {
+    list-style: none;
+  
+}
